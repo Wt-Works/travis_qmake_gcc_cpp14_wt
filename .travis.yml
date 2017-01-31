@@ -31,3 +31,4 @@ script:
   - ./travis_qmake_gcc_cpp14_wt &
   - sleep 10
   - sudo killall travis_qmake_gcc_cpp14_wt
+
