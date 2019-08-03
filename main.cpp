@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 #include <boost/program_options.hpp>
 #include <boost/signals2.hpp>
@@ -9,7 +9,7 @@
 #include <Wt/WPaintedWidget>
 #include <Wt/WPainter>
 #include <Wt/WPushButton>
-#pragma GCC diagnostic pop
+
 
 //A C++14 construct
 auto f() noexcept {
