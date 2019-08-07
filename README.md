@@ -1,8 +1,9 @@
 # travis_qmake_gcc_cpp14_wt
 
-[![Travis CI logo](TravisCI.png)](https://travis-ci.org)
-
-[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp14_wt.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp14_wt)
+Branch|[![Travis CI logo](pics/TravisCI.png)](https://travis-ci.org)
+---|---
+`master`|[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp14_wt.svg?branch=master)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp14_wt)
+`develop`|[![Build Status](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp14_wt.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/travis_qmake_gcc_cpp14_wt)
 
 This GitHub is part of [the Travis C++ Tutorial](https://github.com/richelbilderbeek/travis_cpp_tutorial).
 
