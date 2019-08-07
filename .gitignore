@@ -33,3 +33,5 @@ ui_*
 qrc_*
 .nfs*
 travis_qmake_gcc_cpp11_wt
+4.1.0.tar.gz
+wt-4.1.0/
