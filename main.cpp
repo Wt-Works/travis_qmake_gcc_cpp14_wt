@@ -1,15 +1,12 @@
-
-
 #include <boost/program_options.hpp>
 #include <boost/signals2.hpp>
-#include <Wt/WApplication>
-#include <Wt/WContainerWidget>
-#include <Wt/WEnvironment>
-#include <Wt/WPaintDevice>
-#include <Wt/WPaintedWidget>
-#include <Wt/WPainter>
-#include <Wt/WPushButton>
-
+#include <Wt/WApplication.h>
+#include <Wt/WContainerWidget.h>
+#include <Wt/WEnvironment.h>
+#include <Wt/WPaintDevice.h>
+#include <Wt/WPaintedWidget.h>
+#include <Wt/WPainter.h>
+#include <Wt/WPushButton.h>
 
 //A C++14 construct
 auto f() noexcept {
