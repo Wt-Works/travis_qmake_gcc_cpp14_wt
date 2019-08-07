@@ -14,7 +14,7 @@ wget -c https://github.com/emweb/wt/archive/4.1.0.tar.gz
 tar xvxf 4.1.0.tar.gz
 
 # Build Wt 4.1.
-cd 4.1.0
+cd wt-4.1.0
 mkdir build; cd build
 cmake ..
 make
