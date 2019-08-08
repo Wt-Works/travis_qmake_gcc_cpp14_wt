@@ -16,7 +16,7 @@ LIBS += \
 
 # Wt
 LIBS += -L/usr/local/lib/ -lwt -lwthttp
-INCLUDEPATH += /usr/local/include/
+INCLUDEPATH += /local/include
 
 SOURCES += main.cpp
 

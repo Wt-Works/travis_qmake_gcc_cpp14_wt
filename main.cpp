@@ -45,9 +45,9 @@ struct WtWidget : public Wt::WPaintedWidget
 struct WtDialog : public Wt::WContainerWidget
 {
   WtDialog()
-  : m_widget(new WtWidget)
+  : m_widget(addWidget(std::make_unique<WtWidget>()))
   {
-    this->addWidget(m_widget);
+
   }
   WtDialog(const WtDialog&) = delete;
   WtDialog& operator=(const WtDialog&) = delete;
@@ -59,10 +59,9 @@ struct WtApplication : public Wt::WApplication
 {
   WtApplication(const Wt::WEnvironment& env)
     : Wt::WApplication(env),
-    m_dialog(new WtDialog)
+    m_dialog(root()->addWidget(std::make_unique<WtDialog>()))
   {
     this->setTitle("Thinking Wt 2: creating a  widget");
-    root()->addWidget(m_dialog);
   }
   WtApplication(const WtApplication&) = delete;
   WtApplication& operator=(const WtApplication&) = delete;
@@ -70,10 +69,10 @@ struct WtApplication : public Wt::WApplication
   WtDialog * const m_dialog;
 };
 
-Wt::WApplication *createApplication(
+std::unique_ptr<Wt::WApplication> createApplication(
   const Wt::WEnvironment& env) noexcept
 {
-  return new WtApplication(env);
+  return std::make_unique<WtApplication>(env);
 }
 
 int main(int argc, char **argv)
@@ -126,5 +125,5 @@ int main(int argc, char **argv)
   for (int i=0; i!=7; ++i) w[i] = &v[i][0];
 
   //Give Wt the modified parameters
-  return WRun(w.size(), &w[0], &createApplication);
+  return Wt::WRun(w.size(), &w[0], &createApplication);
 }
